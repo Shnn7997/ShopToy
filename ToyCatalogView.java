@@ -13,7 +13,7 @@ public class ToyCatalogView {
         System.out.print("Введите номер действия: ");
     }
 
-    public void printToyCatalog(List<Toy> toys) {
+    public void printToyCatalog(PriorityQueue<Toy> toys) {
         for (Toy toy : toys) {
             System.out.println(toy.getId() + " - " + toy.getName() + " - " + toy.getWeight());
         }

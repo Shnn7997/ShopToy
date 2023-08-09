@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class ToyCatalogModel {
-    private List<Toy> toys;
+    private PriorityQueue<Toy> toys;
 
     public ToyCatalogModel() {
-        toys = new ArrayList<>();
+        toys = new PriorityQueue<>(Comparator.comparingInt(Toy::getWeight));
     }
 
-    public List<Toy> getToys() {
+    public PriorityQueue<Toy> getToys() {
         return toys;
     }
 
